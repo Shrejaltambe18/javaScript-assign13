@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Items</title>
-    <style></style>
+    <style>
+
+    </style>
 </head>
 <body>
-    <script></script>
+    <h1 class="text">Food Items List</h1>
+
+    <div class="food-item-container" id="food-item-list"></div>
+    <script>
+        const foodItem = ["Panipuri","Manchurian","Kacchi Dabeli","Chinese Noodles","Misal Pav","Veg Pulao","Chicken Biryani"];
+        const foodItemList = document.getElementById("food-item-list");
+
+        for(let i=0; i<foodItem.length; i++){
+            foodItemList.innerHTML = foodItemList.innerHTML + `
+            <div class="food-card">
+                <h2> ${foodItem[i]} </h2>    
+            </div>
+            `;
+        }
+    </script>
 </body>
 </html>
