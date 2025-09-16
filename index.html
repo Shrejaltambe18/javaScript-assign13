@@ -5,15 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Items</title>
     <style>
+        .container{
+            background-color: rgb(54, 203, 154);
+        }
 
+        .text{
+            text-align: center;
+            padding: 10px;
+        }
+
+        .food-item-container{
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+            background-color: white;
+        }
+
+        .food-card{
+            background-color: #f1a747;
+            margin: 5px;
+            padding: 2px;
+            padding-left: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
     </style>
 </head>
-<body>
+<body class="container">
     <h1 class="text">Food Items List</h1>
 
     <div class="food-item-container" id="food-item-list"></div>
     <script>
-        const foodItem = ["Panipuri","Manchurian","Kacchi Dabeli","Chinese Noodles","Misal Pav","Veg Pulao","Chicken Biryani"];
+        const foodItem = ["Panipuri","Manchurian","Kacchi Dabeli","Chinese Noodles","Misal Pav","Veg Pulao","Chicken Biryani","Paneer Masala"];
         const foodItemList = document.getElementById("food-item-list");
 
         for(let i=0; i<foodItem.length; i++){
